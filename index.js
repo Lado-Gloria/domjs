@@ -1,35 +1,37 @@
 // Change document background color to
 // silver
 
-document.getElementsByClassName("")
-
-// document.getElementsByClassName('container')
-// document.getElementById('container').style.color="red"
-// document.getElementById('container').style.backgroundColor ="#e2e2e2"
-// document.getElementById('text').innerHTML="My name is Gloria Lado and am 22 year of age"
-// document.getElementById('container').childNodes;
+document.body.style.backgroundColor = "silver";
 
 
-// let child =document.getElementById('container').childNodes;
-// console.log({child})
-
-// let children =document.getElementById('container').children;
-// console.log({children})
-
-// let p =document.createElement("p");
-// p.innerHTML ="Am doing great"
-// document.getElementById('container').appendChild(p)
-// p.setAttribute("class","paragraph")
-// p.setAttribute("id","paragraph")
-// document.getElementById("paragraph").style.color ="green";
+// 2. Change the font color for h1 title tag to green
+var title= document.getElementById("title");
+title.style.color = "green";
 
 
-// let buttun =document.getElementById('buttun')
-// buttun.addEventListener("click",function(){
-//     buttun.innerHTML="Clicked !!"
-//     buttun.style.backgroundColor="#19ba96"
-//     buttun.style.padding ="10px"
-//     buttun.style.borderRadius="5px"
-//     buttun.style.border ="none"
-// })
+
+// 1. Change document background color to silver
+document.body.style.backgroundColor = "silver";
+// 2. Change the font color for h1 title tag to green
+var title= document.getElementById("title");
+title.style.color = "green";
+// 3. Change the font case for h3 title tags touppercase
+var h3Font = document.getElementsByTagName("h3");
+for (var i = 0; i < h3Font.length; i++) {
+  h3Font[i].style.textTransform = "uppercase";
+}
+// 4. Add one more fruit to the fruits list
+var fruList = document.getElementById("fruList");
+var newFruit = document.createElement("li");
+newFruit.textContent = "Strawberry";
+fruList.appendChild(newFruit);
+// 5. Add one more vegetable to the vegetables list
+var vegList = document.getElementById("vegList");
+var newVegetable = document.createElement("li");
+newVegetable.textContent = "Spinach";
+vegList.appendChild(newVegetable);
+
+
+
+
 
